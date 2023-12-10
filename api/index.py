@@ -8,9 +8,8 @@ class handler(BaseHTTPRequestHandler):
         self.send_header('Content-type', 'text/html')
         self.end_headers()
 
-        content = "HELLOOOOO"
+        content = "<h1>HELLOOOOO</h1>"
 
         self.wfile.write(content.encode('utf-8'))
 
         return
-    
