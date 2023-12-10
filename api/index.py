@@ -10,7 +10,7 @@ class handler(BaseHTTPRequestHandler):
         self.send_header('HX-Swap', 'true')
         self.end_headers()
 
-        content = "<h1>HELLOOOOO</h1>"
+        content = "<h1>HELLOOOOO TEST2</h1>"
 
         self.wfile.write(content.encode('utf-8'))
 
