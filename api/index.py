@@ -13,19 +13,7 @@ class handler(BaseHTTPRequestHandler):
             self.send_header('Access-Control-Allow-Headers', 'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version')
             self.end_headers()
 
-            content = """
-            <!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Test Page</title>
-            </head>
-            <body>
-                <div>Test2</div>
-            </body>
-            </html>
-            """
+            content = "<h1>Test</h1>"
 
             self.wfile.write(content.encode('utf-8'))
         else:
