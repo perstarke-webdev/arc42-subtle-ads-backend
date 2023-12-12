@@ -22,7 +22,7 @@ class handler(BaseHTTPRequestHandler):
                 <title>Test Page</title>
             </head>
             <body>
-                <div>Test1</div>
+                <div>Test2</div>
             </body>
             </html>
             """
